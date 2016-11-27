@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wellington</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script>
+     $(document).ready(function () {
+       $('.slider').slider({full_width: true, height: 700, indicators: false});
+     });
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+    </script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
