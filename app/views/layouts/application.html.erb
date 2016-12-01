@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script>
      $(document).ready(function () {
-       $('.slider').slider({full_width: true, height: 700, indicators: false});
+       $('.slider').slider({full_width: true, indicators: false});
      });
     $(document).ready(function(){
       $('.parallax').parallax();
@@ -16,13 +16,17 @@
     $(document).ready(function(){
       $('.carousel').carousel();
     });
+    // $(document).ready(function(){
+    //   $('.carousel.carousel-slider').carousel({full_width: true});
+    // });
     </script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <style>
 
 </style>
   </head>
 
-  <body style="background-color: black;">
+  <body class="black">
     <%= yield %>
   </body>
 </html>
