@@ -29,7 +29,7 @@ $(document).ready(function(){
    $(".nav-web").click(function() {
         event.preventDefault()
        $('html,body').animate({
-           scrollTop: $(".web").offset().top},
+           scrollTop: $(".web-apps").offset().top},
            'slow');
    });
 

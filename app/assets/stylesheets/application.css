@@ -24,7 +24,7 @@ nav {
 }
 
 nav, .about-me {
-  background-color: rgba(187,187,187, .7);
+  background-color: rgba(26,35,126, .4);
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 .about-me {
   position: fixed;
   display: inline-block;
-  height: 700px;
+  height: 100%;
   width: 25%;
   vertical-align: top;
   -webkit-box-shadow: 2px 0 5px -2px #888;
@@ -93,7 +93,7 @@ body {
 
 .skill-text h6 {
   font-size: 16px;
-  color: #0d47a1;
+  color: #64b5f6;
 }
 
 .skill-text {
