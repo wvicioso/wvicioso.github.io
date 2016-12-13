@@ -15,5 +15,96 @@
  */
 
 * {
-  /*border: 2px solid;*/
+  /*border: 1px solid;*/
 }
+
+nav {
+  width: 75%;
+  border: none;
+}
+
+nav, .about-me {
+  background-color: rgba(187,187,187, .7);
+}
+
+body {
+   background-image: url("http://farm9.staticflickr.com/8045/8119334748_5ccf755a32_b.jpg");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.14), 0 1px 0px 0 rgba(0, 0, 0, 0.12), 0 3px 0px -2px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+}
+
+.section-title {
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-bottom: 2px solid #0d47a1;
+}
+
+.about-me {
+  position: fixed;
+  display: inline-block;
+  height: 700px;
+  width: 25%;
+  vertical-align: top;
+  -webkit-box-shadow: 2px 0 5px -2px #888;
+        box-shadow: 2px 0 5px -2px #888;
+}
+
+.web-apps, .mobile-apps {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+.web-apps .card, .mobile-apps .card {
+  width: 80%;
+  display: inline-block;
+}
+
+.projects {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+
+.skill-wrapper {
+  display: inline-block;
+  margin: 1%;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+}
+
+.skill-text h6 {
+  font-size: 16px;
+  color: #0d47a1;
+}
+
+.skill-text {
+  display: inline-block;
+
+}
+
+
+/*.carousel-slider .indicators .indicator-item  {
+  background-color: #2196f3;
+}
+
+.carousel-slider .indicators .indicator-item.active  {
+  background-color: #90caf9;
+}*/

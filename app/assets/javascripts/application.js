@@ -14,3 +14,25 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+
+
+   $(".nav-mobile").click(function() {
+        event.preventDefault()
+       $('html,body').animate({
+           scrollTop: $(".mobile").offset().top},
+           'slow');
+   });
+
+   $(".nav-web").click(function() {
+        event.preventDefault()
+       $('html,body').animate({
+           scrollTop: $(".web").offset().top},
+           'slow');
+   });
+
+
+   $('.parallax').parallax();
+});
