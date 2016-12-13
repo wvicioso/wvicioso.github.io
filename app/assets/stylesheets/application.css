@@ -77,6 +77,7 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 75%;
+
 }
 
 .skill-wrapper {
@@ -97,9 +98,11 @@ body {
 
 .skill-text {
   display: inline-block;
-
 }
 
+.skills {
+  border-top: 1px solid rgba(999,999,999, .5);
+}
 
 /*.carousel-slider .indicators .indicator-item  {
   background-color: #2196f3;
