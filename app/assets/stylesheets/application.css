@@ -28,12 +28,25 @@ nav, .about-me {
   background-color: #b71c1c;
 }
 
+.btn:hover {
+  background-color: #424242;
+}
 
+.divider {
+  background-color: #b71c1c;
+}
 
 .dropdown-button {
   margin-left: 20px;
   background-color: #b71c1c;
-  z-index: 1000000;
+}
+
+.dropdown-content {
+  margin-left: 20px;
+}
+
+.dropdown-content li a{
+  color: #212121;
 }
 
 body {
@@ -84,9 +97,10 @@ nav {
 .section-title {
   display: inline-block;
   color: white;
+  padding-bottom: 20px;
   margin-right: 40px;
   margin-left: 40px;
-  border-bottom: 2px solid #b71c1c;
+  border-bottom: 2px solid white;
 }
 
 .about-me {
@@ -108,9 +122,23 @@ nav {
 
 .web-apps .card, .mobile-apps .card {
   width: 70%;
+  opacity: .95;
   color: #212121;
   background-color: #e0e0e0;
   display: inline-block;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.web-apps .card:hover, .mobile-apps .card:hover {
+  opacity: 1;
+}
+
+.tiny {
+  font-size: 20px;
 }
 
 .web-apps .card .card-content, .mobile-apps .card .card-content {
