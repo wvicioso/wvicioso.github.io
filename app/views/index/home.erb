@@ -1,14 +1,14 @@
 
 <div class="about-me">
-  <h4 class="white-text">Wellington Vicioso</h4>
-  <h5 class="blue-text text-lighten-2">Full-Stack Web/Mobile Developer</h5>
+  <h4 class="">Wellington Vicioso</h4>
+
 
   <img src="/assets/me.jpg" alt="" class="circle responsive-img">
   <div class="social-media">
-    <h6 class="blue-text text-lighten-2">phone: <span class="white-text">310.367.2608</span></h6>
-    <h6 class="blue-text text-lighten-2">email: <span class="white-text">wellington.vicioso@gmail.com</span></h6>
-    <a class="blue-text text-lighten-2 social-media" href="https://github.com/wvicioso">Github</a>
-    <a class="blue-text text-lighten-2 social-media" href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo">LinkedIn</a>
+    <h6 class="details">phone: <span class="contact">310.367.2608</span></h6>
+    <h6 class="details">email: <span class="contact">wellington.vicioso@gmail.com</span></h6>
+    <a class="details social-media" href="https://github.com/wvicioso">Github</a>
+    <a class="details social-media" href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo">LinkedIn</a>
   </div>
   <div class="skills">
     <% tskills = ["Rails", "Ruby", "Javascript", "HTML", "CSS", "Jquery", "ReactJs", "React-Native", "Node.js", "Xcode", "PostgreSQL", "SQLite3", "Test-Driven Development", "Git", "Github", "Object-Oriented Design" ] %>
@@ -30,31 +30,38 @@
 
 
 <div class="projects right">
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
+  <div class="parallax-container">
+    <div class="navbar-fixed">
+      <nav class="transparent">
+        <a class='left dropdown-button btn' href='#' data-activates='dropdown1'>Projects</a>
 
-        <ul class="right">
+        <ul id='dropdown1' class='dropdown-content'>
           <li><a class="nav-web" href="">Web Apps</a></li>
+          <li class="divider"></li>
           <li><a class="nav-mobile" href="">Mobile Apps</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
+    <div class="center intro">
+      <h3 class="section-title">Full-Stack Web Developer</h3>
+      <p class="flow-text">Freshly Graduated from Dev Bootcamp NYC and ready to continue on developing my technical skills. Motivated and Passionate about programming. Its just something about building beautiful and meaniingful things.</p>
+    </div>
+    <div class="parallax"><img src="http://travelnoire.com/wp-content/uploads/2014/12/o-NEW-YORK-CITY-WRITER-facebook.jpg"></div>
   </div>
-
-
   <div class="center web-apps">
-    <h3 class="web section-title white-text">Web Apps</h3>
+    <div>
+      <h3 class="web section-title">Web Apps</h3>
+    </div>
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="/assets/hack.jpg">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">HackOverflow<i class="material-icons right">more_vert</i></span>
+        <span class="card-title activator">HackOverflow<i class="material-icons right">more_vert</i></span>
         <p><a href="#">Launch Demo</a></p>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">HackOverflow<i class="material-icons right">close</i></span>
+        <span class="card-title">HackOverflow<i class="material-icons right">close</i></span>
         <p>
           HackOverflow is a StackOverflow clone built on Sinatra using Ruby, Javascript, Jquery, HTML, CSS, PostgreSQL, and Materialize.
         </p>
@@ -68,11 +75,11 @@
         <img class="activator" src="/assets/dapr-web.png">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Dapr Web<i class="material-icons right">more_vert</i></span>
+        <span class="card-title activator">Dapr Web<i class="material-icons right">more_vert</i></span>
         <p><a href="#">Launch Demo</a></p>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Dapr Web<i class="material-icons right">close</i></span>
+        <span class="card-title">Dapr Web<i class="material-icons right">close</i></span>
         <p>
           Dapr Web is the Web-App version of the mobile clothing suggestion weather app I developed. Built on Rails.
         </p>
@@ -86,11 +93,11 @@
         <img class="activator" src="/assets/tic.png">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Tic-Tac-Toe<i class="material-icons right">more_vert</i></span>
-        <p><a href="#">Launch Demo</a></p>
+        <span class="card-title activator">Tic-Tac-Toe<i class="material-icons right">more_vert</i></span>
+        <p><a href="https://tic-or-treat.herokuapp.com/">Launch Demo</a></p>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Tic-Tac-Toe<i class="material-icons right">close</i></span>
+        <span class="card-title">Tic-Tac-Toe<i class="material-icons right">close</i></span>
         <p>
           Platform that allows you to play tic-tac-toe and track your games(time spent playing, winnings, losings, resume unfinished games) granted you created an account.
         </p>
@@ -102,17 +109,19 @@
   </div>
 
   <div class="center mobile-apps">
-    <h3 class="mobile section-title white-text">Mobile Apps</h3>
+    <div>
+      <h3 class="mobile section-title">Mobile Apps</h3>
+    </div>
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="assets/dapr-mobile.png">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Dapr<i class="material-icons right">more_vert</i></span>
+        <span class="card-title activator">Dapr<i class="material-icons right">more_vert</i></span>
         <p><a href="#">Github Repo</a></p>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">Dapr<i class="material-icons right">close</i></span>
+        <span class="card-title">Dapr<i class="material-icons right">close</i></span>
         <p>
           Dapr is a clothing suggestion weather app designed to enhance a user's sense of style while still dressing appropriately for the weather.<br><br>
           Built in React-Native, DAPR uses 'The Weather Channel' API to offer users the most accurate weather information throughout their day.
