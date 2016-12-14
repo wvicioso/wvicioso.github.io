@@ -33,10 +33,11 @@ nav, .about-me {
 .dropdown-button {
   margin-left: 20px;
   background-color: #b71c1c;
+  z-index: 1000000;
 }
 
 body {
-   /*background-image: url("http://farm9.staticflickr.com/8045/8119334748_5ccf755a32_b.jpg");*/
+   background-image: url("http://travelnoire.com/wp-content/uploads/2014/12/o-NEW-YORK-CITY-WRITER-facebook.jpg");
    background-color: white;
    background-attachment: fixed;
    background-repeat: no-repeat;
@@ -82,11 +83,10 @@ nav {
 
 .section-title {
   display: inline-block;
-  color: #424242;
-  padding-bottom: 20px;
+  color: white;
   margin-right: 40px;
   margin-left: 40px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 2px solid #b71c1c;
 }
 
 .about-me {
@@ -107,7 +107,7 @@ nav {
 }
 
 .web-apps .card, .mobile-apps .card {
-  width: 60%;
+  width: 70%;
   color: #212121;
   background-color: #e0e0e0;
   display: inline-block;
