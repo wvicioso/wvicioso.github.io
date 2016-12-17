@@ -1,151 +1,50 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Wellington Vicioso</a>
+    </div>
+</nav>
 
-<div class="about-me">
-  <h4 class="">Wellington Vicioso</h4>
 
 
-  <img src="/assets/me.jpg" alt="" class="circle responsive-img">
-  <div class="social-media">
-    <h6 class="details"><i class="tiny material-icons">call</i> <span class="contact">310.367.2608</span></h6>
-    <h6 class="details"><i class="tiny material-icons">email</i> <span class="contact">wellington.vicioso@gmail.com</span></h6>
-    <a class="details social-media" href="https://github.com/wvicioso">Github</a>
-    <a class="details social-media" href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo">LinkedIn</a>
+  <ul class="tabs">
+    <li class="right tab col s3"><a href="#test1">About Me</a></li>
+    <li class="right tab col s3"><a class="active" href="#test2">Projects</a></li>
+    <li class="right tab col s3"><a href="#test4">Contact</a></li>
+  </ul>
+
+
+  <div id="test1" class="col s12">Test 1</div>
+  <div id="test2" class="col s12">
+    <ul id="slide-out" class="center side-nav fixed">
+      <li class="btn-wrap"><a class="btn" href="#!">mobile</a></li>
+      <li class="btn-wrap"><a class="btn" href="#!">web</a></li>
+
+      <li>
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/assets/hack.jpg">
+          </div>
+          <h4 class="card-title">HackOverflow</h4>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/assets/dapr-web.png">
+          </div>
+          <h4 class="card-title">Dapr Web</h4>
+        </div>
+      </li>
+      <li>
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/assets/tic.png">
+          </div>
+          <h4 class="card-title">Tic Tac Toe</h4>
+        </div>
+      </li>
+
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>
-  <div class="skills">
-    <% tskills = ["Rails", "Ruby", "Javascript", "HTML", "CSS", "Jquery", "ReactJs", "React-Native", "Node.js", "Xcode", "PostgreSQL", "SQLite3", "Test-Driven Development", "Git", "Github", "Object-Oriented Design" ] %>
-
-    <%  icons = ["devicon-rails-plain", "devicon-ruby-plain", "devicon-javascript-plain", "devicon-html5-plain", "devicon-css3-plain", "devicon-jquery-plain", "devicon-reactjs-plain", "devicon-react-plain", "devicon-nodejs-plain", "devicon-xcode-plain", "devicon-postgresql-plain", "devicon-sqlite3-plain", "devicon--plain", "devicon-git-plain", "devicon-github-plain", "web"] %>
-
-    <% tskills.each_with_index do |skill, i|%>
-    <div class="skill-wrapper">
-      <div class="logo">
-        <i class="<%= icons[i] %>"></i>
-      </div>
-      <div class="skill-text">
-        <h6> <%= skill %> </h6>
-      </div>
-    </div>
-    <% end %>
-  </div>
-</div>
-
-
-<div class="projects right">
-    <div class="navbar-fixed">
-      <nav class="transparent">
-        <a class='left dropdown-button btn' href='' data-activates='dropdown1'>Projects</a>
-
-        <ul id='dropdown1' class='dropdown-content'>
-          <li><a class="nav-web" href="">Web Apps</a></li>
-          <li class="divider"></li>
-          <li><a class="nav-mobile" href="">Mobile Apps</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="center intro">
-      <h3 class="section-title">Full-Stack Web Developer</h3>
-      <p class="flow-text">Freshly Graduated from Dev Bootcamp NYC and ready to continue on developing my technical skills. Motivated and Passionate about programming. Its just something about building beautiful and meaningful things.</p>
-    </div>
-  <div class="center web-apps">
-    <div>
-      <h3 class="web section-title">Web Apps</h3>
-    </div>
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="/assets/hack.jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator">HackOverflow<i class="material-icons right">more_vert</i></span>
-        <p><a href="#">Launch Demo</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title">HackOverflow<i class="material-icons right">close</i></span>
-        <p>
-          HackOverflow is a StackOverflow clone built on Sinatra using Ruby, Javascript, Jquery, HTML, CSS, PostgreSQL, and Materialize.
-        </p>
-        <p>
-          contributors: Wellington Vicioso, Roman Letvskyy, Matt Edwards
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="/assets/dapr-web.png">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator">Dapr Web<i class="material-icons right">more_vert</i></span>
-        <p><a href="#">Launch Demo</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title">Dapr Web<i class="material-icons right">close</i></span>
-        <p>
-          Dapr Web is the Web-App version of the mobile clothing suggestion weather app I developed. Built on Rails.
-        </p>
-        <p>
-          Designed and developed by: Wellington Vicioso
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="/assets/tic.png">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator">Tic-Tac-Toe<i class="material-icons right">more_vert</i></span>
-        <p><a href="https://tic-or-treat.herokuapp.com/">Launch Demo</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title">Tic-Tac-Toe<i class="material-icons right">close</i></span>
-        <p>
-          Platform that allows you to play tic-tac-toe and track your games(time spent playing, winnings, losings, resume unfinished games) granted you created an account.
-        </p>
-        <p>
-          Contributors: Wellington Vicioso, Tyler Sharp, Roman Letvskyy
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="center mobile-apps">
-    <div>
-      <h3 class="mobile section-title">Mobile Apps</h3>
-    </div>
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="assets/dapr-mobile.png">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator">Dapr<i class="material-icons right">more_vert</i></span>
-        <p><a href="#">Github Repo</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title">Dapr<i class="material-icons right">close</i></span>
-        <p>
-          Dapr is a clothing suggestion weather app designed to enhance a user's sense of style while still dressing appropriately for the weather.<br><br>
-          Built in React-Native, DAPR uses 'The Weather Channel' API to offer users the most accurate weather information throughout their day.
-        </p>
-        <p>
-          Designed and developed by: Wellington Vicioso
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="assets/dapr-mobile.png">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator">Temo<i class="material-icons right">more_vert</i></span>
-        <p><a href="#">Github Repo</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title">Temo<i class="material-icons right">close</i></span>
-        <p>
-          Dapr is a clothing suggestion weather app designed to enhance a user's sense of style while still dressing appropriately for the weather.<br><br>
-          Built in React-Native, DAPR uses 'The Weather Channel' API to offer users the most accurate weather information throughout their day.
-        </p>
-        <p>
-          Designed and developed by: Wellington Vicioso
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+  <div id="test4" class="col s12">Test 4</div>

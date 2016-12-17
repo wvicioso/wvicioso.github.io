@@ -18,7 +18,7 @@
 
 $(document).ready(function(){
 
-
+  $(".button-collapse").sideNav();
    $(".nav-mobile").click(function() {
         event.preventDefault()
        $('html,body').animate({
