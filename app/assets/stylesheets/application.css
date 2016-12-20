@@ -18,17 +18,292 @@
   /*border: 1px solid;*/
 }
 
+body {
+  /*background-image: url("http://travelnoire.com/wp-content/uploads/2014/12/o-NEW-YORK-CITY-WRITER-facebook.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-color: #eeeeee;
+
+}
+
+.brand-logo {
+  left: 20px;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.skill {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2196f3;
+
+}
+
+img {
+  width: 100%;
+}
+
+
+
+.about-me, .top {
+  vertical-align: top;
+  display: inline-block;
+  width: 500px;
+}
+
+.about-me {
+  margin-top: 60px;
+}
+
+.about-me p {
+  text-align: left;
+  font-size: 20px;
+}
+
+#test1 {
+  margin-top: 35px;
+}
+
+.top {
+  height: 400px;
+}
+
+.top img {
+  height: 300px;
+  width: 300px;
+}
+
+.contact {
+  vertical-align: top;
+  font-size: 20px;
+  line-height: 30px;
+
+}
+
+.details {
+  width: 330px;
+  margin: 0 auto;
+}
+
+.details h6 {
+  text-align: left;
+}
+
+.details h6 i {
+  font-size: 25px;
+}
+
+.details a {
+  vertical-align: top;
+  color: #616161;
+  font-size: 30px;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.details a:hover {
+  color: white;
+}
+
+.intro {
+  position: absolute;
+  right: 300px;
+  top: 270px;
+  color: white;
+}
+
+h1 {
+  color: #616161;
+}
+
+.project-body {
+  position: static;
+  width: 70%;
+  margin-top: 2%;
+
+}
+
+.project-body .card-content {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.project-body .card-content p {
+  position: fixed;
+  margin: 0;
+  margin-left: 20px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.project-body .card {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  width: 70%;
+}
+
+ .side-nav .card {
+  margin-left: 27px;
+  width: 80%;
+  height: 200px;
+
+}
+
+.side-nav .card:hover {
+  opacity: .7;
+}
+
+ .side-nav .card-image {
+  height: 80%;
+  width: 100%;
+}
+
+ .side-nav .card-title {
+  margin-top: 0px;
+  padding: 3%;
+  height: 19%;
+}
+
+
+ .side-nav .card-content h4 {
+
+}
+
+ .side-nav .card-image img {
+  height: 200px;
+}
+
+.side-nav {
+  margin-top: 72px;
+  padding-bottom: 15%;
+  padding-top: 50px;
+  width: 27%
+}
+
+.btn, .fiter {
+  display: inline-block;
+  position: fixed;
+  width: 148px;
+  background-color: #424242;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0px 0px 5px white;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.filter {
+  background-color: #424242;
+  opacity: .01;
+
+}
+
+.filter:hover {
+  background-color: white;
+  box-shadow: none;
+  height: 70px;
+  opacity: 1;
+}
+
+.web {
+  box-shadow: none;
+  background: none;
+  top: 105px;
+}
+.web:hover {
+  box-shadow: none;
+  background: none;
+}
+
+.btns {
+  top: 72px;
+  width: 13.5%;
+  margin-left: 13.5%;
+
+  display: inline-block;
+  position: fixed;
+  z-index: 50000;
+}
+
+.dropdown-content {
+  border-bottom-left-radius: 25px;
+}
+
+
+
+
+.mobile:hover {
+  background-color: white;
+  box-shadow: none;
+}
+
+.btn:active {
+  background-color: #616161;
+}
+
+.tabs {
+  width: 100%;
+  align-self: right;
+  position: fixed;
+  top: 25px;
+  z-index: 2000;
+  background: rgba(256, 256, 256, 0.0001);
+}
+
+.tab a {
+  font-size: 20px;
+}
+
+.tabs .indicator {
+    background-color: #2196f3;
+}
+
+/*.btn {
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  font-size: 100%;
+
+
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 0;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}*/
+
+
+
+.circle {
+  border-radius: 18px;
+  margin: 1%;
+}
+
 nav {
+  margin-bottom: 0;
+}
+
+
+/*nav {
   width: 75%;
   border: none;
 }
 
 nav, .about-me {
-  /*background-color: rgb(0,150,136);*/
   background-color: #b71c1c;
-}
+}*/
 
-.btn:hover {
+/*.btn:hover {
   background-color: #424242;
 }
 
@@ -75,8 +350,7 @@ nav {
 }
 
 .circle {
-  height: 80%;
-  width: 80%;
+
 }
 
 .intro {
@@ -104,14 +378,21 @@ nav {
 }
 
 .about-me {
-  color: #f5f5f5;
   position: fixed;
   display: inline-block;
-  height: 100%;
-  width: 25%;
+  width: 10%;
   vertical-align: top;
   -webkit-box-shadow: 2px 0 5px -2px #888;
         box-shadow: 2px 0 5px -2px #888;
+}
+
+.top {
+  color: #f5f5f5;
+  height: 40px;
+}
+
+.about-me h4 {
+  font-size: 100%;
 }
 
 .web-apps, .mobile-apps {
@@ -135,10 +416,6 @@ nav {
 
 .web-apps .card:hover, .mobile-apps .card:hover {
   opacity: 1;
-}
-
-.tiny {
-  font-size: 20px;
 }
 
 .web-apps .card .card-content, .mobile-apps .card .card-content {
@@ -190,7 +467,8 @@ nav {
 
 .contact {
   color: #f5f5f5;
-}
+  font-size: 50%;
+}*/
 
 /*.carousel-slider .indicators .indicator-item  {
   background-color: #2196f3;
