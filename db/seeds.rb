@@ -26,7 +26,7 @@ Project.create([{
     platform: "web"
   },
   {
-    title: "dapr",
+    title: "Dapr",
     img: 'dapr.jpg',
     body: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
     platform: "mobile"
