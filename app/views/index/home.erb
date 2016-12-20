@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
   <nav class="white darken-4">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo left grey-text text-darken-4">Wellington Vicioso</a>
+      <a href="#" class="brand-logo left grey-text text-darken-4">W V</a>
     </div>
   </nav>
 </div>
@@ -25,30 +25,20 @@
   </div>
   <div class="about-me">
     <p class="grey-text text-darken-2 flow-text">Self-motivated, diligent <span class="blue-text">Software Developer</span> with a desire to pursue a career in Web-Developemnt.</p>
-      <p class="grey-text text-darken-2 flow-text"> <span class="skill">Well-versed in:</span><br> Ruby, Rails, Javascript, Jquery, SQL, Rspec, HTML, CSS, Git, and Github.</p>
-      <p class="grey-text text-darken-2 flow-text"><span class="skill">Experience with:</span><br> ReactJS, React-Native, Node, Recursive Algorithms, Test-Driven Development, and Object-Oriented Design.</p>
+    <p class="grey-text text-darken-2 flow-text"> <span class="skill">Well-versed in:</span><br> Ruby, Rails, Javascript, Jquery, SQL, Rspec, HTML, CSS, Git, and Github.</p>
+    <p class="grey-text text-darken-2 flow-text"><span class="skill">Experience with:</span><br> ReactJS, React-Native, Node, Recursive Algorithms, Test-Driven Development, and Object-Oriented Design.</p>
   </div>
 </div>
 
 <div id="test2" class="col s12">
-
-  <a class='dropdown-button btn btns' href='#' data-activates='dropdown1'>Drop Me!</a>
-
-  <ul id='dropdown1' class='btns dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul>
-  <!-- <div class="btns transparent">
-    <a class="btn blue-text" href="#!">filter</a>
-  </div>
-  <div class="filter btns" style="">
-    <div class="">
+  <div class="right btns">
+    <a class="btn grey darken-3 blue-text" href="#!">filter</a>
+    <div class="filter" style="">
       <a class="btn mobile blue-text" href="#!">mobile</a>
       <a class="btn web blue-text" href="#!">web</a>
-    </div>
- </div> -->
+   </div>
+ </div>
+
   <ul id="slide-out" class="center white darken-2 side-nav fixed">
     <% @projects.each do |proj| %>
       <%= render 'side_nav_item', :project => proj %>

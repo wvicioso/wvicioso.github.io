@@ -18,53 +18,39 @@
   /*border: 1px solid;*/
 }
 
-body {
-  /*background-image: url("http://travelnoire.com/wp-content/uploads/2014/12/o-NEW-YORK-CITY-WRITER-facebook.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;*/
-  background-color: #eeeeee;
-
-}
-
 .brand-logo {
   left: 20px;
   font-family: 'Cabin Sketch', cursive;
 }
 
-.skill {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #2196f3;
-
+body {
+  background-color: #eeeeee;
 }
 
-img {
-  width: 100%;
+.intro {
+  color: white;
+  margin-left: 300px;
+  margin-top: 200px;
 }
 
 
+h4 {
+  margin-top: 5px;
+}
 
-.about-me, .top {
+.top, .about-me {
   vertical-align: top;
   display: inline-block;
-  width: 500px;
-}
-
-.about-me {
-  margin-top: 60px;
-}
-
-.about-me p {
-  text-align: left;
-  font-size: 20px;
-}
-
-#test1 {
-  margin-top: 35px;
+  padding: 0;
+  width: 400px;
 }
 
 .top {
-  height: 400px;
+  margin-top: 40px;
+  height: 480px;
+  margin-right: 50px;
+  margin-left: 30px;
+  width: 330px;
 }
 
 .top img {
@@ -79,6 +65,18 @@ img {
 
 }
 
+.about-me {
+  padding-left: 20px;
+  margin-top: 40px;
+  height: 480px;
+}
+
+.about-me p {
+  text-align: left;
+  margin-bottom: 55px;
+  font-size: 20px;
+}
+
 .details {
   width: 330px;
   margin: 0 auto;
@@ -86,15 +84,20 @@ img {
 
 .details h6 {
   text-align: left;
+
 }
 
 .details h6 i {
   font-size: 25px;
+  margin-left: 14px;
 }
 
 .details a {
   vertical-align: top;
   color: #616161;
+  margin-right: 10px;
+  margin-left: 10px;
+
   font-size: 30px;
   -webkit-transition: all 150ms ease;
   -moz-transition: all 150ms ease;
@@ -107,22 +110,16 @@ img {
   color: white;
 }
 
-.intro {
-  position: absolute;
-  right: 300px;
-  top: 270px;
-  color: white;
-}
+.skill {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2196f3;
 
-h1 {
-  color: #616161;
 }
 
 .project-body {
   position: static;
   width: 70%;
   margin-top: 2%;
-
 }
 
 .project-body .card-content {
@@ -144,6 +141,26 @@ h1 {
   vertical-align: top;
   margin-top: 0;
   width: 70%;
+}
+
+#test1 {
+  margin-top: 35px;
+}
+
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #616161;
+}
+
+.side-nav {
+  margin-top: 72px;
+  padding-bottom: 15%;
+  padding-top: 50px;
+  width: 300px;
 }
 
  .side-nav .card {
@@ -177,20 +194,38 @@ h1 {
   height: 200px;
 }
 
-.side-nav {
-  margin-top: 72px;
-  padding-bottom: 15%;
-  padding-top: 50px;
-  width: 27%
+.btns {
+  background: none;
+  left: 150px;
+  top: 72px;
+  width: 27vw;
+  position: fixed;
+  z-index: 50000;
 }
 
-.btn, .fiter {
+.btn {
+}
+
+.btn, .filter {
   display: inline-block;
-  position: fixed;
+  vertical-align: top;
   width: 148px;
-  background-color: #424242;
+  background-color: #646464;
   border-bottom-left-radius: 25px;
-  box-shadow: 0px 0px 5px white;
+  box-shadow: none;
+  position: fixed;
+
+  -webkit-transition: all 400ms ease; !important;
+  -moz-transition: all 400ms ease; !important;
+  -ms-transition: all 400ms ease; !important;
+  -o-transition: all 400ms ease; !important;
+  transition: all 400ms ease; !important;
+}
+
+.filter {
+  border-bottom-left-radius: 25px;
+  height: 10px;
+  opacity: .001;
   -webkit-transition: all 150ms ease;
   -moz-transition: all 150ms ease;
   -ms-transition: all 150ms ease;
@@ -198,53 +233,14 @@ h1 {
   transition: all 150ms ease;
 }
 
-.filter {
-  background-color: #424242;
-  opacity: .01;
+.mobile {
+  border-bottom-left-radius: 0px;
 
-}
-
-.filter:hover {
-  background-color: white;
-  box-shadow: none;
-  height: 70px;
-  opacity: 1;
 }
 
 .web {
   box-shadow: none;
-  background: none;
-  top: 105px;
-}
-.web:hover {
-  box-shadow: none;
-  background: none;
-}
-
-.btns {
-  top: 72px;
-  width: 13.5%;
-  margin-left: 13.5%;
-
-  display: inline-block;
-  position: fixed;
-  z-index: 50000;
-}
-
-.dropdown-content {
-  border-bottom-left-radius: 25px;
-}
-
-
-
-
-.mobile:hover {
-  background-color: white;
-  box-shadow: none;
-}
-
-.btn:active {
-  background-color: #616161;
+  background: #424242;
 }
 
 .tabs {
@@ -264,26 +260,6 @@ h1 {
     background-color: #2196f3;
 }
 
-/*.btn {
-  padding: 0;
-  margin: 0;
-  width: 40%;
-  font-size: 100%;
-
-
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  height: 36px;
-  line-height: 36px;
-  padding: 0 0;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-}*/
-
-
-
 .circle {
   border-radius: 18px;
   margin: 1%;
@@ -292,188 +268,3 @@ h1 {
 nav {
   margin-bottom: 0;
 }
-
-
-/*nav {
-  width: 75%;
-  border: none;
-}
-
-nav, .about-me {
-  background-color: #b71c1c;
-}*/
-
-/*.btn:hover {
-  background-color: #424242;
-}
-
-.divider {
-  background-color: #b71c1c;
-}
-
-.dropdown-button {
-  margin-left: 20px;
-  background-color: #b71c1c;
-}
-
-.dropdown-content {
-  margin-left: 20px;
-}
-
-.dropdown-content li a{
-  color: #212121;
-}
-
-body {
-   background-image: url("http://travelnoire.com/wp-content/uploads/2014/12/o-NEW-YORK-CITY-WRITER-facebook.jpg");
-   background-color: white;
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-
-.parallax-container {
-  height: 100%;
-}
-
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
-  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.14), 0 1px 0px 0 rgba(0, 0, 0, 0.12), 0 3px 0px -2px rgba(0, 0, 0, 0.2);
-}
-
-nav {
-  box-shadow: 0 0 0 0;
-}
-
-.nav-web, .nav-mobile {
-  color: #b71c1c;
-}
-
-.circle {
-
-}
-
-.intro {
-  padding: 50px; height: 700px;
-  margin-top: 15%;
-}
-
-.intro h3 {
-  color: white;
-  text-shadow: 0px 2px 2px grey;
-}
-
-.intro p {
-  color: #e0e0e0;
-  text-shadow: 5px 10px 10px black;
-}
-
-.section-title {
-  display: inline-block;
-  color: white;
-  padding-bottom: 20px;
-  margin-right: 40px;
-  margin-left: 40px;
-  border-bottom: 2px solid white;
-}
-
-.about-me {
-  position: fixed;
-  display: inline-block;
-  width: 10%;
-  vertical-align: top;
-  -webkit-box-shadow: 2px 0 5px -2px #888;
-        box-shadow: 2px 0 5px -2px #888;
-}
-
-.top {
-  color: #f5f5f5;
-  height: 40px;
-}
-
-.about-me h4 {
-  font-size: 100%;
-}
-
-.web-apps, .mobile-apps {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-}
-
-.web-apps .card, .mobile-apps .card {
-  width: 70%;
-  opacity: .95;
-  color: #212121;
-  background-color: #e0e0e0;
-  display: inline-block;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.web-apps .card:hover, .mobile-apps .card:hover {
-  opacity: 1;
-}
-
-.web-apps .card .card-content, .mobile-apps .card .card-content {
-  text-align: left;
-  border-left: 10px solid #b71c1c;
-}
-
-.card-reveal .card-title {
-  color: #b71c1c;
-}
-
-.projects {
-  display: inline-block;
-  vertical-align: top;
-  width: 75%;
-
-}
-
-.skill-wrapper {
-  display: inline-block;
-  margin: 1%;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 25px;
-  color: white;
-}
-
-.skill-text h6 {
-  font-size: 16px;
-  color: #006989;
-}
-
-.skill-text {
-  display: inline-block;
-}
-
-.skills {
-  border-top: 1px solid rgba(999,999,999, .5);
-  background-color: #212121;
-  height: 100%;
-
-}
-
-.about-me .details {
-  color: #212121;
-}
-
-.contact {
-  color: #f5f5f5;
-  font-size: 50%;
-}*/
-
-/*.carousel-slider .indicators .indicator-item  {
-  background-color: #2196f3;
-}
-
-.carousel-slider .indicators .indicator-item.active  {
-  background-color: #90caf9;
-}*/

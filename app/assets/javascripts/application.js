@@ -16,10 +16,39 @@
 //= require_tree .
 
 $(document).ready(function(){
-  
+  event.preventDefault()
+
+  $( ".filter" ).hover(
+    function() {
+      $( ".filter" ).css({'height': '70px', 'opacity': '1', 'background-color': 'rgba(0, 0, 0, .001)'});
+      $( ".web" ).css({'top': '105px'});
+
+    }, function() {
+      $( ".filter" ).css({'height': '10px', 'opacity': '.001', 'background-color': '#424242'});
+      $( ".web" ).css({'top': '72px'});
+    }
+  );
+
+  $('.web').hover(
+    function(){
+      $('.web').css({'background-color': '#646464'});
+    }, function() {
+      $('.web').css({'background-color': '#424242'});
+    }
+  );
+
+  $('.mobile').hover(
+    function(){
+      $('.mobile').css({'background-color': '#646464'});
+    }, function() {
+      $('.mobile').css({'background-color': '#424242'});
+    }
+  );
+
+
    $(".button-collapse").sideNav();
+
    $(".project-item").click(function() {
-     event.preventDefault()
      $( ".project-body" ).stop(true, true)
      $('.card').css({'opacity': '1', 'background-color': 'white'});
      var proj_title = $(event.target).closest('.card').css({'opacity': '.3', 'background-color': 'white'});
@@ -38,7 +67,6 @@ $(document).ready(function(){
         // Animation complete
         });
      })
-
    });
 
    $(".nav-mobile").click(function() {
