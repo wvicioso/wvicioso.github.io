@@ -1,50 +1,64 @@
-<nav>
+<div class="navbar-fixed">
+  <nav class="white darken-4">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Wellington Vicioso</a>
+      <a href="#" class="brand-logo left grey-text text-darken-4">Wellington Vicioso</a>
     </div>
-</nav>
+  </nav>
+</div>
+
+<ul class="right tabs">
+  <li class="right tab col s3"><a class="grey-text text-darken-4 active" href="#test2">Projects</a></li>
+  <li class="right tab col s3"><a class="grey-text text-darken-4"href="#test1">About Me</a></li>
+</ul>
 
 
-
-  <ul class="tabs">
-    <li class="right tab col s3"><a href="#test1">About Me</a></li>
-    <li class="right tab col s3"><a class="active" href="#test2">Projects</a></li>
-    <li class="right tab col s3"><a href="#test4">Contact</a></li>
-  </ul>
-
-
-  <div id="test1" class="col s12">Test 1</div>
-  <div id="test2" class="col s12">
-    <ul id="slide-out" class="center side-nav fixed">
-      <li class="btn-wrap"><a class="btn" href="#!">mobile</a></li>
-      <li class="btn-wrap"><a class="btn" href="#!">web</a></li>
-
-      <li>
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="/assets/hack.jpg">
-          </div>
-          <h4 class="card-title">HackOverflow</h4>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="/assets/dapr-web.png">
-          </div>
-          <h4 class="card-title">Dapr Web</h4>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="/assets/tic.png">
-          </div>
-          <h4 class="card-title">Tic Tac Toe</h4>
-        </div>
-      </li>
-
-    </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+<div id="test1" class="center col s12">
+  <div class="top">
+    <h4 class="grey-text text-darken-2" >Wellington Vicioso</h4>
+    <img src="/assets/me.jpg" alt="" class="circle responsive-img">
+    <div class="details center">
+      <h6 class=""><i class="small material-icons blue-text">call</i> <span class="grey-text text-darken-2 contact">310.367.2608</span></h6>
+      <h6 class=""><i class="small material-icons blue-text">email</i> <span class="grey-text text-darken-2 contact">wellington.vicioso@gmail.com</span></h6>
+      <a class="center" href="https://github.com/wvicioso"><i class="devicon-github-plain"></i></a>
+      <a class="center" href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
   </div>
-  <div id="test4" class="col s12">Test 4</div>
+  <div class="about-me">
+    <p class="grey-text text-darken-2 flow-text">Self-motivated, diligent <span class="blue-text">Software Developer</span> with a desire to pursue a career in Web-Developemnt.</p>
+      <p class="grey-text text-darken-2 flow-text"> <span class="skill">Well-versed in:</span><br> Ruby, Rails, Javascript, Jquery, SQL, Rspec, HTML, CSS, Git, and Github.</p>
+      <p class="grey-text text-darken-2 flow-text"><span class="skill">Experience with:</span><br> ReactJS, React-Native, Node, Recursive Algorithms, Test-Driven Development, and Object-Oriented Design.</p>
+  </div>
+</div>
+
+<div id="test2" class="col s12">
+
+  <a class='dropdown-button btn btns' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+  <ul id='dropdown1' class='btns dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+  <!-- <div class="btns transparent">
+    <a class="btn blue-text" href="#!">filter</a>
+  </div>
+  <div class="filter btns" style="">
+    <div class="">
+      <a class="btn mobile blue-text" href="#!">mobile</a>
+      <a class="btn web blue-text" href="#!">web</a>
+    </div>
+ </div> -->
+  <ul id="slide-out" class="center white darken-2 side-nav fixed">
+    <% @projects.each do |proj| %>
+      <%= render 'side_nav_item', :project => proj %>
+    <% end %>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse">
+    <i class="material-icons">menu</i>
+  </a>
+
+  <div class="right project-body">
+    <h1 class="intro">Projects</h1>
+  </div>
+</div>

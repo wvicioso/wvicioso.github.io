@@ -15,10 +15,32 @@
 //= require turbolinks
 //= require_tree .
 
-
 $(document).ready(function(){
+  
+   $(".button-collapse").sideNav();
+   $(".project-item").click(function() {
+     event.preventDefault()
+     $( ".project-body" ).stop(true, true)
+     $('.card').css({'opacity': '1', 'background-color': 'white'});
+     var proj_title = $(event.target).closest('.card').css({'opacity': '.3', 'background-color': 'white'});
 
-  $(".button-collapse").sideNav();
+     var proj_title = $(event.target).closest('.card').find('h4').html()
+
+     $.ajax({
+       url: '/project/find',
+       method: "get",
+       data: {title: proj_title}
+     }).done(function(response){
+       $( ".project-body" ).fadeOut( 800, function() {
+         $(".project-body").html(response.partial)
+        });
+       $( ".project-body" ).fadeIn( 800, function() {
+        // Animation complete
+        });
+     })
+
+   });
+
    $(".nav-mobile").click(function() {
         event.preventDefault()
        $('html,body').animate({
