@@ -20,6 +20,10 @@
 
 .construction {
   position: fixed;
+  width: 100%;
+  top: 20px;
+  margin-left: 80px;
+  font-size: 12px;
   z-index: 1000000;
 }
 
