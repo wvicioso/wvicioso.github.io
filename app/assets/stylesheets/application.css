@@ -215,11 +215,11 @@ h1 {
   box-shadow: none;
   position: fixed;
 
-  -webkit-transition: all 400ms ease; !important;
-  -moz-transition: all 400ms ease; !important;
-  -ms-transition: all 400ms ease; !important;
-  -o-transition: all 400ms ease; !important;
-  transition: all 400ms ease; !important;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .filter {
