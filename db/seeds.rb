@@ -33,7 +33,7 @@ Project.create([{
   },
   {
     title: "Temo",
-    img: 'temo.jpg',
+    img: 'temo.png',
     body: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
     platform: "mobile"
   }]
