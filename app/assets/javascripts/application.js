@@ -21,11 +21,11 @@ $(document).ready(function(){
   $( ".filter" ).hover(
     function() {
       $( ".filter" ).css({'height': '70px', 'opacity': '1', 'background-color': 'rgba(0, 0, 0, .001)'});
-      $( ".web" ).css({'top': '105px'});
+      $( ".web" ).css({'top': '105px', 'opacity': '1'});
 
     }, function() {
       $( ".filter" ).css({'height': '10px', 'opacity': '.001', 'background-color': '#424242'});
-      $( ".web" ).css({'top': '72px'});
+      $( ".web" ).css({'top': '105px', 'opacity': '.001'});
     }
   );
 
@@ -82,7 +82,6 @@ $(document).ready(function(){
          $(".project-body").html(response.partial)
         });
        $( ".project-body" ).fadeIn( 800, function() {
-        // Animation complete
         });
      })
    });
