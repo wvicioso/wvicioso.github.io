@@ -29,11 +29,11 @@
 
 .brand-logo {
   left: 20px;
-  font-family: 'Cabin Sketch', cursive;
+
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: white;
 }
 
 .intro {
@@ -47,14 +47,14 @@ h4 {
   margin-top: 5px;
 }
 
-.top, .about-me {
+.contact-info, .about-me {
   vertical-align: top;
   display: inline-block;
   padding: 0;
   width: 400px;
 }
 
-.top {
+.contact-info {
   margin-top: 40px;
   height: 480px;
   margin-right: 50px;
@@ -62,9 +62,24 @@ h4 {
   width: 330px;
 }
 
-.top img {
+.contact-info img {
   height: 300px;
   width: 300px;
+}
+
+.my-intro {
+  position: relative;
+  top: -300px;
+}
+
+.my-intro p {
+  text-shadow: 2px 2px 5px black;
+}
+
+.my-intro h1 {
+  text-shadow: 1px 1px 5px black;
+  font-weight: 200;
+  margin-top: 0;
 }
 
 .contact {
@@ -154,7 +169,12 @@ h4 {
 }
 
 #test1 {
-  margin-top: 35px;
+}
+
+#test2 {
+  /*background: url("https://silvergapyear.files.wordpress.com/2010/12/dscf0557.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;*/
 }
 
 
