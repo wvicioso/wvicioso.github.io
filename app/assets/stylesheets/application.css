@@ -286,4 +286,8 @@ nav {
     .btns {
         opacity: .001;
     }
+    .project-body {
+      position: absolute;
+      margin-left: 100px;
+    }
 }
