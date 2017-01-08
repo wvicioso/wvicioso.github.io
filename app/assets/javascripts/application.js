@@ -46,6 +46,24 @@ $(document).ready(function(){
   );
 
 
+  $('.web').click(function(){
+    event.preventDefault()
+    $('.type-web').show()
+    $('.type-mobile').hide()
+  });
+
+  $('.mobile').click(function(){
+    event.preventDefault()
+    $('.type-web').hide()
+    $('.type-mobile').show()
+  });
+
+  $('.all').click(function(){
+    event.preventDefault()
+    $('.type-web').show()
+    $('.type-mobile').show()
+  });
+
    $(".button-collapse").sideNav();
 
    $(".project-item").click(function() {
