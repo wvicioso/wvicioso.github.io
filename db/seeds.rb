@@ -9,13 +9,6 @@
 
 Project.create([
   {
-    title: "Temo",
-    img: 'temo.png',
-    body: "Built with React-Native and Microsoft's Text-Analytics API, Temo is a mobile messaging app that visually indicates the sentiment value of a text-message while you're typing it. As project-lead, it was my responsibilty to delegate tasks, prioritize features, and make executive design decisions as my team and I tackled the challenge of building a funcitonal mobile app in 7 days. This was part of the final projects at Dev Bootcamp NYC.",
-    platform: "mobile",
-    link: "https://github.com/nyc-bobolinks-2016/TemoApp"
-  },
-  {
     title: "HackOverflow",
     img: 'hack.jpg',
     body: "This is a StackOverflow clone built in Sinatra with Ruby, Jqeury, and Postgres. The motive of this project was to practice updating the UI dynamically as well as forming relational associatons in the database.",
@@ -25,9 +18,9 @@ Project.create([
   {
     title: "Dapr Web",
     img: 'dapr-web.png',
-    body: "I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.",
+    body: "Dapr Web is the Web App version of DAPR built with Rails.",
     platform: "web",
-    link: ""
+    link: "https://dapr-web.herokuapp.com/"
   },
   {
     title: "Tic Tac Toe",
@@ -42,5 +35,12 @@ Project.create([
     body: "Built with React-Native and the the-weather-channel API, DAPR is a mobile weather app that suggests fashionable and weather-appropriate clothing while still informating you of everything you need to know about current weather conditions",
     platform: "mobile",
     link: "https://github.com/wvicioso/dapr"
-  }
+  },
+  {
+    title: "Temo",
+    img: 'temo.png',
+    body: "Built with React-Native and Microsoft's Text-Analytics API, Temo is a mobile messaging app that visually indicates the sentiment value of a text-message while you're typing it. As project-lead, it was my responsibilty to delegate tasks, prioritize features, and make executive design decisions as my team and I tackled the challenge of building a funcitonal mobile app in 7 days. This was part of the final projects at Dev Bootcamp NYC.",
+    platform: "mobile",
+    link: "https://github.com/nyc-bobolinks-2016/TemoApp"
+  },
 ])
