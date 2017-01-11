@@ -135,8 +135,12 @@ h4 {
 }
 
 .skill {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #2196f3;
+  margin: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 1.5em;
+  border-left: 1px solid #2196f3;
+  text-align: left;
 
 }
 

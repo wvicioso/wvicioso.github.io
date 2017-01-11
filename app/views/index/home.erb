@@ -1,4 +1,4 @@
-<div class="navbar-fixed">
+<!-- <div class="navbar-fixed">
   <nav class="white darken-4">
     <div class="nav-wrapper">
       <a href="" class="brand-logo left grey-text text-darken-4">Wellington Vicioso</a>
@@ -65,4 +65,77 @@
   <div class="right project-body">
     <h1 class="grey-text text-darken-4 intro">Projects</h1>
   </div>
-</div>
+</div> -->
+
+
+
+			<!-- Banner -->
+			<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+				<section id="banner" >
+					<div class="inner">
+						<header>
+							<h1>Wellington Vicioso</h1>
+              <p class="white-text">Self-motivated, diligent <span class="blue-text">Software Developer</span> with a desire to pursue a career in Web-Development.</p>
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+					<!-- Boxes -->
+						<div class="thumbnails">
+              <% i = 1 %>
+              <% @projects.each do |proj| %>
+              <% i = 1 if i > 3 %>
+							<div class="box">
+								<a href="<%= proj.link %>" class="image fit"><img src="assets/<%=proj.img%>" alt="" /></a>
+								<div class="inner">
+									<h3><%= proj.title %></h3>
+									<p><%= proj.body %></p>
+									<a href="<%= proj.link %>" class="button style<%=i%> fit" data-poptrox="youtube,800x400">Visit Project</a>
+								</div>
+							</div>
+              <% i += 1 %>
+              <% end %>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Wellington Vicioso</h2>
+
+            <div id="footer1">
+              <img src="assets/me.jpg" alt="">
+              <ul>
+                <li>phone: 310.367.2608</li>
+                <li>email: wellington.vicioso@gmail.com</li>
+              </ul>
+  						<ul class="icons">
+  							<li><a href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+                <li><a href="https://github.com/wvicioso" class="icon fa-github"><span class="label">Github</span></a></li>
+  						</ul>
+            </div>
+            <div id="footer2">
+              <p class="grey-text text-lighten-1"> <span class="skill">Well-versed in:</span><br> Ruby, Rails, Javascript, Jquery, SQL, Rspec, HTML, CSS, Git, and Github.</p>
+              <p class="grey-text text-lighten-1"><span class="skill">Experience with:</span><br> ReactJS, React-Native, Node, Recursive Algorithms, Test-Driven Development, and Object-Oriented Design.</p>
+            </div>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. Videos: <a href="http://coverr.co/">Coverr</a>.</p>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="assets/javascripts/jquery.min.js"></script>
+			<script src="assets/javascripts/jquery.scrolly.min.js"></script>
+			<script src="assets/javascripts/jquery.poptrox.min.js"></script>
+			<script src="assets/javascripts/skel.min.js"></script>
+			<script src="assets/javascripts/util.js"></script>
+			<script src="assets/javascripts/main.js"></script>
