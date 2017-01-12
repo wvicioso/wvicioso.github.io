@@ -233,6 +233,31 @@
 		text-align: center;
 	}
 
+	@media screen and (max-width: 736px) {
+		#footer1 .icons li {
+			font-size: 12px;
+			padding: 0;
+			margin: 0;
+		}
+		#footer1 ul li {
+			font-size: 10px;
+		}
+		#footer1 ul {
+			width: 170px;
+		}
+		#footer1 .icons {
+			text-align: left;
+		}
+		#footer2 .skill {
+			font-size: 9px;
+
+		}
+		#footer2 p {
+			font-size: 8px;
+			width: 120px;
+		}
+	}
+
 	#footer2 {
 		margin-left: 4em;
 		font-size: 1.5vw;
@@ -1458,4 +1483,3 @@
 			}
 
 		}
-		
