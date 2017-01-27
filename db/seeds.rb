@@ -25,7 +25,7 @@ Project.create([
   {
     title: "Tic Tac Toe",
     img: 'tic.png',
-    body: "Built on Rails with ReactJS, this platform allows users to play tic-tac-toe. If a user created an account, they would be able to track game stats as well as pause games which can be resumed later. My main responsibilty for this project was to build the competitative algorithm users play against. This game is live on Heroku.",
+    body: "Built on Rails with ReactJS, this platform allows users to play tic-tac-toe. If a user created an account, they would be able to track game stats as well as pause games which can be resumed later. My main responsibility for this project was to build the competitative algorithm users play against. This game is live on Heroku.",
     platform: "web",
     link: "https://tic-or-treat.herokuapp.com/"
   },
@@ -39,7 +39,7 @@ Project.create([
   {
     title: "Temo",
     img: 'temo.png',
-    body: "Built with React-Native and Microsoft's Text-Analytics API, Temo is a mobile messaging app that visually indicates the sentiment value of a text-message while you're typing it. As project-lead, it was my responsibilty to delegate tasks, prioritize features, and make executive design decisions as my team and I tackled the challenge of building a funcitonal mobile app in 7 days. This was part of the final projects at Dev Bootcamp NYC.",
+    body: "Built with React-Native and Microsoft's Text-Analytics API, Temo is a mobile messaging app that visually indicates the sentiment value of a text-message while you're typing it. As project-lead, it was my responsibility to delegate tasks, prioritize features, and make executive design decisions as my team and I tackled the challenge of building a functional mobile app in 7 days. This was part of the final projects at Dev Bootcamp NYC.",
     platform: "mobile",
     link: "https://github.com/nyc-bobolinks-2016/TemoApp"
   },
