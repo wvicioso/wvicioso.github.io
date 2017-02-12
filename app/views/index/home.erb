@@ -1,50 +1,54 @@
-				<section id="banner" >
-					<div class="inner">
-						<header>
-							<h1>Wellington Vicioso</h1>
-              <p class="white-text">Self-motivated, diligent <span class="blue-text">Software Developer</span> with a desire to pursue a career in Web-Development.</p>
-						</header>
-						<a href="#main" class="more">Learn More</a>
-					</div>
-				</section>
-				<div id="main">
-					<div class="inner">
-						<div class="thumbnails">
-              <% i = 1 %>
-              <% @projects.each do |proj| %>
-              <% i = 1 if i > 3 %>
-							<div class="box">
-								<a href="<%= proj.link %>" class="image fit"><img src="assets/<%=proj.img%>" alt="" /></a>
-								<div class="inner">
-									<h3><%= proj.title %></h3>
-									<p><%= proj.body %></p>
-									<a href="<%= proj.link %>" class="button style<%=i%> fit" data-poptrox="youtube,800x400">Visit Project</a>
-								</div>
-							</div>
-              <% i += 1 %>
-              <% end %>
-						</div>
-					</div>
+<section id="banner" >
+	<div class="inner">
+		<header>
+			<h1>Wellington Vicioso</h1>
+			<h2 class="flow-text teal-text text-accent-4">Full-Stack Software Developer</h2>
+		</header>
+		<a href="#main" class="more">Learn More</a>
+	</div>
+</section>
+<div id="main">
+	<div class="skillWrapper">
+		<p class="techSkills grey-text text-darken-4"> <span class="skill">Technologies</span><br> Ruby on Rails, React-Native, Javascript, Ajax, Jquery, ReactJS, ES6, PostgreSQL, SQLite3, Rspec, HTML5, CSS3, Git, Github, Heroku, AWS, Firebase, Rspec, Jasmine.</p>
+		<p class="techSkills grey-text text-darken-4"><span class="skill">Methodologies</span><br> Agile, SCRUM, Object-Oriented Design, Test-Driven Development.</p>
+	</div>
+	<div class="inner">
+		<div class="thumbnails">
+      <% i = 1 %>
+      <% @projects.each do |proj| %>
+      <% i = 1 if i > 3 %>
+			<div class="box">
+				<a href="<%= proj.link %>" class="image fit"><img src="assets/<%=proj.img%>" alt="" /></a>
+				<div class="inner">
+					<h3><%= proj.title %></h3>
+					<p><%= proj.body %></p>
+					<a href="<%= proj.link %>" class="button style<%=i%> fit" data-poptrox="youtube,800x400">Visit Project</a>
 				</div>
-				<footer id="footer">
-					<div class="inner">
-						<h2>Wellington Vicioso</h2>
+			</div>
+      <% i += 1 %>
+      <% end %>
+		</div>
+	</div>
+</div>
+<footer id="footer">
+	<div class="inner">
+		<h2>Wellington Vicioso</h2>
 
-            <div id="footer1">
-              <img src="assets/me.jpg" alt="">
-              <ul>
-                <li>phone: 310.367.2608</li>
-                <li>email: wellington.vicioso@gmail.com</li>
-              </ul>
-  						<ul class="icons">
-  							<li><a href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-                <li><a href="https://github.com/wvicioso" class="icon fa-github"><span class="label">Github</span></a></li>
-  						</ul>
-            </div>
-            <div id="footer2">
-              <p class="grey-text text-lighten-1"> <span class="skill">Technologies:</span><br> Ruby on Rails, React-Native, Javascript, Ajax, Jquery, ReactJS, ES6, PostgreSQL, SQLite3, Rspec, HTML5, CSS3, Git, Github, Heroku, AWS, Firebase, Rspec, Jasmine.</p>
-              <p class="grey-text text-lighten-1"><span class="skill">Methodologies:</span><br> Agile, SCRUM, Object-Oriented Design, Test-Driven Development.</p>
-            </div>
-						<p class="copyright">&copy; Wellington Vicioso 2016</p>
-					</div>
-				</footer>
+    <div id="footer1">
+      <img src="assets/me.jpg" alt="">
+			<ul class="icons">
+				<li>310.367.2608</li>
+				<li>wellington.vicioso@gmail.com</li>
+				<li><a href="https://www.linkedin.com/in/wellington-vicioso-8343b3ba?trk=hp-identity-photo" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+        <li><a href="https://github.com/wvicioso" class="icon fa-github"><span class="label">Github</span></a></li>
+			</ul>
+    </div>
+    <div id="footer2">
+			<p>
+				“Do not go where the path may lead, go instead where there is no path and leave a trail.”
+			</p>
+			<p>-R. Emerson</p>
+    </div>
+		<p class="copyright">&copy; Wellington Vicioso 2016</p>
+	</div>
+</footer>

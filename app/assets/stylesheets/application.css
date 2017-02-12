@@ -151,7 +151,7 @@ p {
   padding-right: 10px;
   padding-left: 10px;
   font-size: 1.5em;
-  border-left: 1px solid #2196f3;
+  border-left: 3px solid #00bfa5;
   text-align: left;
 
 }
@@ -184,6 +184,58 @@ p {
   width: 70%;
 }
 
+#main .skillWrapper {
+  margin-bottom: 70px;
+}
+
+#main .skillWrapper p {
+}
+
+#main .skillWrapper p .skill{
+
+}
+
+#main div .techSkills {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+}
+
+#main .skillWrapper p {
+  font-size: 20px;
+}
+
+#footer {
+  bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#footer2 p {
+  width: 350px;
+  font-size: 17px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#footer1 ul {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#footer .inner h2 {
+  font-size: 45px;
+}
+
+#footer1 ul li a {
+  margin-top: 20px;
+}
+
+.box .inner p {
+  font-size: 12px;
+}
+
 #test1 {
 }
 
@@ -199,11 +251,16 @@ h3 {
 
 
 img {
-  width: 100%;
+  width: 30%;
 }
 
 h1 {
   color: #616161;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
 }
 
 .side-nav {

@@ -212,7 +212,7 @@
 	#footer1, #footer2 {
 		vertical-align: top;
 		display: inline-block;
-		width: 30%;
+		width: 40%;
 
 
 	}
@@ -719,6 +719,7 @@
 
 			.image.fit img {
 				width: 100%;
+				height: 200px;
 			}
 
 		.image.main {
