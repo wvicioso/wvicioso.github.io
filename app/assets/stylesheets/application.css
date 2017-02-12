@@ -15,7 +15,7 @@
  */
 
 * {
-  /*border: 1px solid;*/
+  /*border: 1px solid ;*/
 }
 
 .construction {
@@ -32,6 +32,11 @@
 
 }
 
+
+.box {
+  width: 20%;
+}
+
 body {
   background-color: white;
 }
@@ -42,9 +47,16 @@ body {
   margin-top: 200px;
 }
 
+.inner .button {
+  top: 20px;
+}
 
 h4 {
   margin-top: 5px;
+}
+
+p {
+  font-size: 10px;
 }
 
 .contact-info, .about-me {
@@ -179,6 +191,10 @@ h4 {
   /*background: url("https://silvergapyear.files.wordpress.com/2010/12/dscf0557.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;*/
+}
+
+h3 {
+  font-size: 24px;
 }
 
 
