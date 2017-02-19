@@ -49,7 +49,7 @@ body {
 }
 
 .skill #tech, .skill #method {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -141,6 +141,7 @@ body {
   margin: 20px;
   padding: 10px;
   height: 170px;
+  width: 90%;
   background-color: white;
 }
 
@@ -252,6 +253,6 @@ footer a {
 
 @media only screen and (max-width: 1000px) {
     body {
-        width: 1000px;
+
     }
 }
