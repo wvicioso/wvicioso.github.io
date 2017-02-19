@@ -1,0 +1,83 @@
+<section id="header" class="center">
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg">
+    </div>
+    <h1>Wellington Vicioso</h1>
+    <h2>Full-Stack Software Engineer</h2>
+    <i class="fa fa-laptop" aria-hidden="true"></i>
+  </div>
+</section>
+
+<div class="skill">
+  <div id="tech">
+    <h3>Technologies</h3>
+    <ul>
+    <% tech_skills = ["React-Native", "Ruby on Rails", "Node", "Sinatra", "JavaScript", "ReactJs", "Jquery", "AJAX", "HTML", "CSS", "PostgreSQL", "SQLite3", "Firebase", "Rspec", "Jasmine", "Git", "Github", "AWS", "Heroku"] %>
+    <% tech_skills.each do |skill| %>
+       <li> <%= skill %> </li>
+       <% if tech_skills.last != skill %>
+          <i class="fa fa-asterisk" aria-hidden="true"></i>
+        <% end %>
+    <% end %>
+    </ul>
+  </div>
+  <div id="method">
+    <h3>Methodologies</h3>
+    <ul>
+    <% methods = ["Agile", "Scrum", "Object Oriented Design", "Test Driven Development"] %>
+    <% methods.each do |method| %>
+       <li> <%= method %> </li>
+       <% if methods.last != method %>
+          <i class="fa fa-asterisk" aria-hidden="true"></i>
+        <% end %>
+    <% end %>
+    </ul>
+  </div>
+</div>
+
+<section id="page-divider" class="center">
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/7c/a1/54/7ca15437b2ede2d07c6a805170c07db7.jpg">
+    </div>
+    <h1>Projects</h1>
+  </div>
+</section>
+
+
+<div class="project">
+  <% @projects.each do |proj| %>
+    <div class="proj_object">
+
+      <img src="assets/<%=proj.img%>" alt="">
+
+      <div class="proj-desc">
+        <h2 class="title"><%= proj.title %></h2>
+        <h3 class="sub-title">Bring emotions to text.</h3>
+        <p class="tech">
+          <%= proj.body %>
+        </p>
+        <a class="about" href="<%= proj.link %>">More...</a>
+
+      </div>
+
+    </div>
+  <% end %>
+</div>
+
+<footer>
+  <div class="contact">
+    <h1>Wellington Vicioso</h1>
+    <h2>wellington.vicioso@gmail.com</h2>
+    <h2>310.367.2608</h2>
+  </div>
+  <div class="social">
+    <a href="https://github.com/wvicioso">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/wvicioso/">
+      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    </a>
+  </div>
+</footer>

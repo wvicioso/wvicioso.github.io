@@ -1,399 +1,257 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
 * {
-  /*border: 1px solid ;*/
-}
-
-.construction {
-  position: fixed;
-  width: 100%;
-  top: 20px;
-  margin-left: 80px;
-  font-size: 12px;
-  z-index: 1000000;
-}
-
-.brand-logo {
-  left: 20px;
-
-}
-
-
-.box {
-  width: 20%;
+  /*border: 2px solid blue;*/
 }
 
 body {
-  background-color: white;
+  background: black;
 }
 
-.intro {
+#header {
+  text-align: center;
+}
+
+#header .parallax-container {
+  vertical-align: middle;
+}
+
+#header i {
+  display: block;
+  font-size: 80px;
   color: white;
-  margin-left: 300px;
-  margin-top: 200px;
 }
 
-.inner .button {
-  top: 20px;
+#header img {
+  opacity: .6;
+  width: 150%;
 }
 
-h4 {
-  margin-top: 5px;
-}
-
-p {
-  font-size: 10px;
-}
-
-.contact-info, .about-me {
-  vertical-align: top;
-  display: inline-block;
-  padding: 0;
-  width: 400px;
-}
-
-.contact-info {
-  margin-top: 40px;
-  height: 480px;
-  margin-right: 50px;
-  margin-left: 30px;
-  width: 330px;
-}
-
-.contact-info img {
-  height: 300px;
-  width: 300px;
-}
-
-.my-intro {
-  position: relative;
-  top: -300px;
-}
-
-.my-intro p {
-  text-shadow: 2px 2px 5px black;
-}
-
-.my-intro h1 {
-  text-shadow: 2px 2px 10px black;
-  font-weight: 200;
-  margin-top: 0;
-}
-
-.contact {
-  vertical-align: top;
-  font-size: 20px;
-  line-height: 30px;
-
-}
-
-.about-me {
-  padding-left: 20px;
-  margin-top: 40px;
-  height: 480px;
-}
-
-.about-me p {
-  text-align: left;
-  margin-bottom: 55px;
-  font-size: 20px;
-}
-
-.details {
-  width: 330px;
-  margin: 0 auto;
-}
-
-.details h6 {
-  text-align: left;
-
-}
-
-.details h6 i {
-  font-size: 25px;
-  margin-left: 14px;
-}
-
-.details a {
-  vertical-align: top;
-  color: #616161;
-  margin-right: 10px;
-  margin-left: 10px;
-
-  font-size: 30px;
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease;
-}
-
-.details a:hover {
+#header h1 {
+  margin-top: 10%;
+  font-size: 60px;
+  font-weight: 900;
   color: white;
+}
+
+#header h2 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #00bfa5;
+}
+
+{
+  background-color: grey;
 }
 
 .skill {
-  margin: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  font-size: 1.5em;
-  border-left: 3px solid #00bfa5;
-  text-align: left;
-
-}
-
-.project-body {
-  position: static;
-  width: 70%;
-  margin-top: 2%;
-}
-
-.project-body .card-content {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0;
-
-}
-
-.project-body .card-content p {
-  position: fixed;
-  margin: 0;
-  margin-left: 20px;
-  width: 200px;
-  font-size: 15px;
-}
-
-.project-body .card {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 0;
-  width: 70%;
-}
-
-#main .skillWrapper {
-  margin-bottom: 70px;
-}
-
-#main .skillWrapper p {
-}
-
-#main .skillWrapper p .skill{
-
-}
-
-#main div .techSkills {
-  width: 80%;
+  padding: 10px;
   margin: 0 auto;
-  font-size: 24px;
+  background: white;
+}
+
+.skill #tech, .skill #method {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
 
 }
 
-#main .skillWrapper p {
+.skill #tech h3, .skill #method h3 {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #424242;
+}
+
+.skill #tech h3 {
+  margin-left: 150px;
+  border-left: 6px solid #00bfa5;
+}
+
+.skill #method h3 {
+  margin-right: 150px;
+  border-right: 6px solid #00bfa5;
+}
+
+.skill ul {
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.skill li {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 20px;
+  font-weight: 300;
+  color: #00bfa5;
+  margin: 5px;
 }
 
-#footer {
-  bottom: 0px;
-  margin-bottom: 0px;
-}
-
-#footer2 p {
-  width: 350px;
-  font-size: 17px;
+.skill i {
   margin: 0 auto;
-  margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 5px;
+  font-weight: bold;
+  color: #424242;
 }
 
-#footer1 ul {
-  width: 200px;
-  margin: 0 auto;
+#method {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: right;
 }
 
-#footer .inner h2 {
-  font-size: 45px;
-}
-
-#footer1 ul li a {
-  margin-top: 20px;
-}
-
-.box .inner p {
-  font-size: 12px;
-}
-
-#test1 {
-}
-
-#test2 {
-  /*background: url("https://silvergapyear.files.wordpress.com/2010/12/dscf0557.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;*/
-}
-
-h3 {
-  font-size: 24px;
-}
-
-
-img {
-  width: 30%;
-}
-
-h1 {
-  color: #616161;
-}
-
-h2 {
-  font-size: 24px;
-  margin-top: 0;
-}
-
-.side-nav {
-  margin-top: 72px;
-  padding-bottom: 15%;
-  padding-top: 50px;
-  width: 300px;
-}
-
- .side-nav .card {
-  margin-left: 27px;
-  width: 80%;
+#page-divider .parallax-container {
   height: 200px;
 
 }
 
-.side-nav .card:hover {
-  opacity: .7;
-}
-
- .side-nav .card-image {
-  height: 80%;
+#page-divider .parallax-container img {
   width: 100%;
-}
-
- .side-nav .card-title {
-  margin-top: 0px;
-  padding: 3%;
-  height: 19%;
-}
-
-
- .side-nav .card-content h4 {
+  filter: sepia(50%);
 
 }
 
- .side-nav .card-image img {
-  height: 90%;
+#page-divider .parallax-container h1 {
+  margin: 0 auto;
+  height: 100%;
+  line-height: 180px;
+  font-weight: 300;
+  color: #00bfa5;
+  background-color: rgba(0,0,0,.3);
 }
 
-.btns {
-  background: none;
-  left: 152px;
-  top: 72px;
-  width: 27vw;
-  position: fixed;
-  z-index: 50000;
+.project {
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+
 }
 
-.btn {
-}
-
-.btn, .filter {
+.proj_object {
   display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  height: 170px;
+  background-color: white;
+}
+
+
+.proj_object img {
   vertical-align: top;
-  width: 148px;
-  background-color: #646464;
-  border-bottom-left-radius: 25px;
-  box-shadow: none;
-  position: fixed;
-
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  -ms-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-
-.filter {
-  border-bottom-left-radius: 25px;
-  height: 10px;
-  opacity: .001;
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease;
-}
-
-.mobile {
-  border-bottom-left-radius: 0px;
+  border: .5px solid #e0e0e0;
+  width: 250px;
+  height: 150px;
 
 }
 
-.web {
-  box-shadow: none;
-  background: #424242;
+.proj-desc {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  margin-left: 10px;
+  width: 60%;
 }
 
-.tabs {
-  width: 100%;
-  height: 41px;
-  align-self: right;
-  position: fixed;
-  margin-bottom: 0;
-  top: 25px;
-  z-index: 2000;
-  background: rgba(256, 256, 256, 0.0001);
+.proj_object .title {
+  margin: 0 auto;
+  border-bottom: 1px solid #00bfa5;
+  font-size: 24px;
+  font-weight: bold;
+  color: #424242;
+
 }
 
-.tab a {
+.proj_object .sub-title {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #424242;
+
+
+}
+
+.proj_object .tech {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 200;
+  color: #424242;
+  height: 45px;
+
+
+}
+
+.proj_object .about {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  bottom: 0px;
+  color: #03a9f4;
+
+}
+
+footer {
+  background-color: #00bfa5;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  height: 150px;
+}
+
+footer .contact {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  margin: auto;
+  width: 400px;
+}
+
+footer h1 {
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  font-size: 30px;
+}
+
+footer h2 {
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
   font-size: 20px;
+  color: #424242;
 }
 
-.tabs .indicator {
-    background-color: #2196f3;
+footer .social {
+  position: absolute;
+  right: 50px;
+
 }
 
-.circle {
-  border-radius: 18px;
-  margin: 1%;
+footer a {
+  display: inline-block;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  margin: 20px;
 }
 
-nav {
-  margin-bottom: 0;
-}
-
-
-@media screen and (max-width: 992px) {
-    .btns {
-        opacity: .001;
-    }
-    .project-body {
-      position: absolute;
-      margin-left: 100px;
-    }
-    .nav-wrapper a {
-      font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .button-collapse {
-        opacity: .001;
+@media only screen and (max-width: 1000px) {
+    body {
+        width: 1000px;
     }
 }

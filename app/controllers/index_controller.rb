@@ -3,7 +3,7 @@ class IndexController < ApplicationController
   def home
     @projects = Project.all
 
-    render :home
+    render :homepage
   end
 
   def connect
