@@ -54,12 +54,14 @@
 
       <div class="proj-desc">
         <h2 class="title"><%= proj.title %></h2>
-        <h3 class="sub-title">Bring emotions to text.</h3>
+        <h3 class="sub-title"><%= proj.subTitle %></h3>
         <p class="tech">
-          <%= proj.body %>
+          <%= proj.tech %>
         </p>
-        <a class="about" href="<%= proj.link %>">More...</a>
-
+        <p class="body">
+          <%= proj.body %>
+          <a class="about" href="<%= proj.link %>">Visit</a>
+        </p>
       </div>
 
     </div>

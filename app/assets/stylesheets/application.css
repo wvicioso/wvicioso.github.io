@@ -127,16 +127,20 @@ body {
 
 .project {
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   text-align: center;
   background-color: white;
 
 }
 
 .proj_object {
+  vertical-align: top;
   display: inline-block;
-  margin: 20px;
-  padding: 10px;
-  height: 170px;
+  margin: 15px;
+  padding: 0px;
+  height: 10%;
   width: 90%;
   background-color: white;
 }
@@ -145,16 +149,15 @@ body {
 .proj_object img {
   vertical-align: top;
   border: .5px solid #e0e0e0;
+  margin: 20px;
   width: 250px;
-  height: 150px;
-
+  height: 170px;
 }
 
 .proj-desc {
   display: inline-block;
-  margin: 10px;
+  margin: 20px;
   text-align: left;
-  margin-left: 10px;
   width: 60%;
 }
 
@@ -179,12 +182,19 @@ body {
 
 .proj_object .tech {
   margin: 0 auto;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 200;
   color: #424242;
-  height: 45px;
 
 
+}
+
+.proj_object .body {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #424242;
 }
 
 .proj_object .about {
@@ -210,7 +220,7 @@ footer .contact {
   position: absolute;
   left: 50px;
   margin: auto;
-  width: 400px;
+  width: 300px;
 }
 
 footer h1 {
@@ -245,4 +255,48 @@ footer a {
   text-align: center;
   color: white;
   margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .skill #tech h3 {
+    margin-left: 20px;
+  }
+
+  .skill #method h3 {
+    margin-right: 20px;
+  }
+    footer {
+      width: 100%;
+      padding: 0px;
+      margin: 0 auto;
+      height: 25vw;
+    }
+    footer .contact {
+      left: 5%;
+      width: 70%;
+    }
+    footer h1 {
+      font-size: 6vw;
+      margin-bottom: 5%;
+    }
+    footer h2 {
+      font-size: 4vw;
+    }
+    footer .social {
+      right: 5%;
+      margin: 0 auto;
+      padding: 0px;
+      width: 10%;
+    }
+    footer a {
+      display: inline-block;
+      font-size: 8vw;
+      color: white;
+      margin: 0 auto;
+      padding: 0px;
+    }
+    footer i {
+      margin: 0 auto;
+      padding: 0px;
+    }
 }
