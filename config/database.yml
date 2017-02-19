@@ -80,8 +80,6 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
   database: wellington_production
   username: wellington
   password: <%= ENV['WELLINGTON_DATABASE_PASSWORD'] %>
