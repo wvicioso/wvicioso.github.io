@@ -20,7 +20,12 @@ body {
   color: white;
 }
 
+#header img {
+  opacity: .6;
+  width: 150% !important;
+  visibility: visible !important;
 
+}
 
 #header h1 {
   margin-top: 10%;
@@ -107,7 +112,12 @@ body {
 
 }
 
+#page-divider .parallax-container img {
+  width: 100% !important;
+  visibility: visible !important;
+  filter: sepia(50%);
 
+}
 
 #page-divider .parallax-container h1 {
   margin: 0 auto;
