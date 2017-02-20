@@ -22,7 +22,7 @@ body {
 
 #header img {
   opacity: .6;
-  width: 150%;
+  width: 150% !important;
 }
 
 #header h1 {
@@ -111,7 +111,7 @@ body {
 }
 
 #page-divider .parallax-container img {
-  width: 100%;
+  width: 100% !important;
   filter: sepia(50%);
 
 }
