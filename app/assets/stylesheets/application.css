@@ -1,17 +1,9 @@
 * {
-  /*border: 2px solid blue;*/
+  border: .5px solid blue;
 }
 
 body {
   background: black;
-}
-
-#header {
-  text-align: center;
-}
-
-#header .parallax-container {
-  vertical-align: middle;
 }
 
 #header i {
