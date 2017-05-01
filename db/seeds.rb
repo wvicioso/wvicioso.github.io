@@ -9,6 +9,15 @@
 
 Project.create([
   {
+    title: "Scale",
+    subTitle: "Build financial freedom through the support of a community. Manage your budget, share goals, and get rewarded for meeting them.",
+    img: 'scale.png',
+    tech: "React-Native, Firebase",
+    body: "Scale is a budgeting app that introduces a sense of competitiveness among users. You and you friends are ranked by the points you earn for actively using the app. The more you points you have, the more financially responsible you are. Since your friends can also see your Scale score, you have an incentive to gain more points so you're not at the bottom of the rack.",
+    platform: "mobile",
+    link: "https://github.com/CUNYTech/BudgetApp"
+  },
+  {
     title: "Dapr",
     subTitle: "Always know how to dress for any weather.",
     img: 'dapr.png',
@@ -35,15 +44,15 @@ Project.create([
     platform: "web",
     link: "https://dbc-hackoverflow.herokuapp.com/"
   },
-  {
-    title: "Dapr Web",
-    subTitle: "Always know how to dress for any weather.",
-    img: 'dapr-web.png',
-    tech: "Ruby on Rails",
-    body: "Web App version of DAPR built on Rails.",
-    platform: "web",
-    link: "https://dapr-web.herokuapp.com/"
-  },
+  # {
+  #   title: "Dapr Web",
+  #   subTitle: "Always know how to dress for any weather.",
+  #   img: 'dapr-web.png',
+  #   tech: "Ruby on Rails",
+  #   body: "Web App version of DAPR built on Rails.",
+  #   platform: "web",
+  #   link: "https://dapr-web.herokuapp.com/"
+  # },
   {
     title: "Tic Tac Toe",
     subTitle: "Track your tic-tac-toe skill!",
