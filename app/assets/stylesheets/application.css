@@ -266,38 +266,43 @@ footer a {
   .proj_object img {
     width: 100%;
   }
-    footer {
-      width: 100%;
-      padding: 0px;
-      margin: 0 auto;
-      height: 25vw;
-    }
-    footer .contact {
-      left: 5%;
-      width: 70%;
-    }
-    footer h1 {
-      font-size: 6vw;
-      margin-bottom: 5%;
-    }
-    footer h2 {
-      font-size: 12px;
-    }
-    footer .social {
-      right: 5%;
-      margin: 0 auto;
-      padding: 0px;
-      width: 10%;
-    }
-    footer a {
-      display: inline-block;
-      font-size: 8vw;
-      color: white;
-      margin: 0 auto;
-      padding: 0px;
-    }
-    footer i {
-      margin: 0 auto;
-      padding: 0px;
-    }
+  footer {
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    height: 25vw;
+  }
+  footer .contact {
+    left: 5%;
+    width: 70%;
+  }
+  footer h1 {
+    font-size: 6vw;
+    margin-bottom: 5%;
+  }
+  footer h2 {
+    font-size: 12px;
+  }
+
+  footer .contact h2 {
+    font-size: 12px;
+  }
+
+  footer .social {
+    right: 5%;
+    margin: 0 auto;
+    padding: 0px;
+    width: 10%;
+  }
+  footer a {
+    display: inline-block;
+    font-size: 8vw;
+    color: white;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  footer i {
+    margin: 0 auto;
+    padding: 0px;
+  }
 }
