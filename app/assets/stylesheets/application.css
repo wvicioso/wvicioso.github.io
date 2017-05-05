@@ -1,9 +1,6 @@
-* {
-  border: .5px solid blue;
-}
-
 body {
   background: black;
+  width: 100%;
 }
 
 #header i {
@@ -264,6 +261,10 @@ footer a {
 
   .skill #method h3 {
     margin-right: 20px;
+  }
+
+  .proj_object img {
+    width: 100%;
   }
     footer {
       width: 100%;
