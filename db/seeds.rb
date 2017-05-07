@@ -13,7 +13,7 @@ Project.create([
     subTitle: "Build financial freedom through the support of a community. Manage your budget, share goals, and get rewarded for meeting them.",
     img: 'scale.png',
     tech: "React-Native, Firebase",
-    body: "Scale is a budgeting app that introduces a sense of competitiveness among users. You and you friends are ranked by the points you earn for actively using the app. The more you points you have, the more financially responsible you are. Since your friends can also see your Scale score, you have an incentive to gain more points so you're not at the bottom of the rack.",
+    body: "Scale is a budgeting app that introduces a sense of competitiveness among users. You and your friends are ranked by the points you earn for actively using the app. The more you points you have, the more financially responsible you are. Since your friends can also see your Scale score, you have an incentive to gain more points so you're not at the bottom of the rack.",
     platform: "mobile",
     link: "https://github.com/CUNYTech/BudgetApp"
   },
