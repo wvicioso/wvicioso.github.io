@@ -25,27 +25,16 @@
     <link href='https://www.wellingtonvicioso.com' rel='canonical'>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="https://use.fontawesome.com/5253df0a68.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/application.css">
-    <script src='./assets/javascripts/application.js'></script>
-
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-         $('.parallax').parallax();
-      });
-    </script>
+    <link rel="stylesheet" type="text/css" href="./app/assets/stylesheets/application.css">
+    <link rel="stylesheet" type="text/css" href="./app/assets/stylesheets/materialize.css">
   </head>
 
   <body id="top">
     <section id="header" class="center">
       <div class="parallax-container">
         <div class="parallax">
-          <img src="assets/headerpic.jpg">
+          <img src="./app/assets/images/headerpic.jpg">
         </div>
         <h1>Wellington Vicioso</h1>
         <h2>Full-Stack Software Engineer</h2>
@@ -117,31 +106,30 @@
     <section id="page-divider" class="center">
       <div class="parallax-container">
         <div class="parallax">
-          <img src="assets/divpic.jpg">
+          <img src="./app/assets/images/divpic.jpg">
         </div>
         <h1>Projects</h1>
       </div>
     </section>
 
     <div class="project">
-
-        <div class="proj_object">
-          <img src="./assets/images/scale.png" alt="">
-          <div class="proj-desc">
-            <h2 class="title">Scale</h2>
-            <h3 class="sub-title">Build financial freedom through the support of a community. Manage your budget, share goals, and get rewarded for meeting them.</h3>
-            <p class="tech">
-              React-Native, Firebase
-            </p>
-            <p class="body">
-              Scale is a budgeting app that introduces a sense of competitiveness among users. You and your friends are ranked by the points you earn for actively using the app. The more you points you have, the more financially responsible you are. Since your friends can also see your Scale score, you have an incentive to gain more points so you're not at the bottom of the rack.
-              <a class="about" href="https://github.com/CUNYTech/BudgetApp">Visit</a>
-            </p>
-          </div>
+      <div class="proj_object">
+        <img src="./app/assets/images/scale.png" alt="">
+        <div class="proj-desc">
+          <h2 class="title">Scale</h2>
+          <h3 class="sub-title">Build financial freedom through the support of a community. Manage your budget, share goals, and get rewarded for meeting them.</h3>
+          <p class="tech">
+            React-Native, Firebase
+          </p>
+          <p class="body">
+            Scale is a budgeting app that introduces a sense of competitiveness among users. You and your friends are ranked by the points you earn for actively using the app. The more you points you have, the more financially responsible you are. Since your friends can also see your Scale score, you have an incentive to gain more points so you're not at the bottom of the rack.
+            <a class="about" href="https://github.com/CUNYTech/BudgetApp">Visit</a>
+          </p>
         </div>
+      </div>
 
         <div class="proj_object">
-          <img src="./assets/images/dapr.png" alt="">
+          <img src="./app/assets/images/dapr.png" alt="">
           <div class="proj-desc">
             <h2 class="title">Dapr</h2>
             <h3 class="sub-title">
@@ -158,7 +146,7 @@
         </div>
 
         <div class="proj_object">
-          <img src="./assets/images/temo.png" alt="">
+          <img src="./app/assets/images/temo.png" alt="">
           <div class="proj-desc">
             <h2 class="title">Temo</h2>
             <h3 class="sub-title">
@@ -175,7 +163,7 @@
         </div>
 
         <div class="proj_object">
-          <img src="./assets/images/hack.jpg" alt="">
+          <img src="./app/assets/images/hack.jpg" alt="">
           <div class="proj-desc">
             <h2 class="title">HackOverflow</h2>
             <h3 class="sub-title">
@@ -192,7 +180,7 @@
         </div>
 
         <div class="proj_object">
-          <img src="./assets/images/hack.jpg" alt="">
+          <img src="./app/assets/images/tic.png" alt="">
           <div class="proj-desc">
             <h2 class="title">Tic Tac Toe</h2>
             <h3 class="sub-title">
@@ -207,7 +195,6 @@
             </p>
           </div>
         </div>
-
     </div>
 
     <footer>
@@ -225,6 +212,18 @@
         </a>
       </div>
     </footer>
-
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/5253df0a68.js"></script>
+  <script src="./app/assets/javascripts/skel.min.js"></script>
+  <script src="./app/assets/javascripts/materialize.js"></script>
+  <script src="./app/assets/javascripts/jquery.poptrox.min.js"></script>
+  <script src="./app/assets/javascripts/jquery.scrolly.min.js"></script>
+  <script src="./app/assets/javascripts/application.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  </script>
 </html>
