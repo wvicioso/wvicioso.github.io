@@ -145,7 +145,7 @@ class App extends Component {
     let { width, height } = this.state.canvas
     for (let i = 0; i < 100; i++) {
       const color = this.randomColor(colors)
-      const radius = 15
+      const radius = 25
       let x = this.randomIntFromRange(radius, width - radius);
       let y = this.randomIntFromRange(radius, height - radius);
 
@@ -184,7 +184,14 @@ class App extends Component {
 
   render() {
     return (
-      <canvas ref="canvas" width={window.innerWidth} height={window.innerHeight} style={{ background: '#fff'}}></canvas>
+      <div>
+        <canvas ref="canvas" width={window.innerWidth} height={window.innerHeight} style={{ background: '#fff'}}></canvas>
+          <div className="main-text">
+            <h1>Wellington Vicioso</h1>
+            <h2>Full-Stack Software Developer</h2>
+            <p>Under Construction...</p>
+          </div>
+      </div>
     );
   }
 }

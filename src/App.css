@@ -26,6 +26,38 @@
   /* animation: App-stars infinite 20s linear; */
 }
 
+.main-text {
+  font-family: 'Palanquin', sans-serif;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #212121;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  /* background-color: rgba(0,0,0,0); */
+}
+
+.main-text h1 {
+  font-size: 55px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-text h2 {
+  font-size: 21px;
+  padding: 0px;
+  margin: 0px;
+  color: #212121;
+}
+
+.main-text p {
+  color: #00bcd4;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
