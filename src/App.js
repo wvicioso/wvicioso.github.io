@@ -45,7 +45,6 @@ class App extends Component {
     })
 
     window.addEventListener('resize', event => {
-      console.log('here')
       this.setState({
         canvas: {
           width: window.innerWidth,
@@ -143,7 +142,11 @@ class App extends Component {
   init() {
     let particles = [];
     let { width, height } = this.state.canvas
-    for (let i = 0; i < 100; i++) {
+    let num = (width * height) / 7000
+    console.log(width * height)
+
+    console.log(num)
+    for (let i = 0; i < num; i++) {
       const color = this.randomColor(colors)
       const radius = 25
       let x = this.randomIntFromRange(radius, width - radius);
