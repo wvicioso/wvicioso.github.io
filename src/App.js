@@ -4,14 +4,14 @@ import Particle from './particle.js'
 
 
 const colors = [
-  '#80deea',
-  '#4dd0e1',
-  '#26c6da',
-  '#00bcd4',
-  '#00acc1',
-  '#0097a7',
-  '#00838f',
-  '#006064'
+  '#80deea90',
+  '#4dd0e190',
+  '#26c6da90',
+  '#00bcd490',
+  '#00acc190',
+  '#0097a790',
+  '#00838f90',
+  '#00606490'
 ]
 
 
@@ -143,9 +143,7 @@ class App extends Component {
     let particles = [];
     let { width, height } = this.state.canvas
     let num = (width * height) / 7000
-    console.log(width * height)
 
-    console.log(num)
     for (let i = 0; i < num; i++) {
       const color = this.randomColor(colors)
       const radius = 25

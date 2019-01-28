@@ -9,8 +9,8 @@ class Particle {
       this.x = x;
       this.y = y;
       this.velocity = {
-        x: (Math.random() - 0.5) * 5,
-        y: (Math.random() - 0.5) * 5
+        x: (Math.random() - 0.5) * 2.5,
+        y: (Math.random() - 0.5) * 2.5
       };
       this.radius = radius;
       this.color = color;
