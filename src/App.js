@@ -11,7 +11,7 @@ const colors = [
   '#00acc190',
   '#0097a790',
   '#00838f90',
-  '#00606490'
+  '#00606499'
 ]
 
 
@@ -186,11 +186,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <canvas ref="canvas" width={window.innerWidth} height={window.innerHeight} style={{ background: '#fff'}}></canvas>
+        <canvas ref="canvas" width={window.innerWidth - 10} height={window.innerHeight - 10} style={{ background: '#fff' }}></canvas>
           <div className="main-text">
             <h1>Wellington Vicioso</h1>
             <h2>Full-Stack Software Developer</h2>
-            <p>Under Construction...</p>
+          </div>
+
+          <div className="links-modal">
+            <a className="links-btn" href="https://github.com/wvicioso/wvicioso.github.io">View Code</a><br/>
+            <a className="links-btn" href="mailto:wellington.vicioso@gmail.com">Email</a><br/>
+            <a className="links-btn" href="tel:+13103672608">Call</a><br/>
           </div>
       </div>
     );
@@ -198,26 +203,3 @@ class App extends Component {
 }
 
 export default App;
-
-//
-// renderLanguages() {
-//
-// }
-//
-// getRandomInt(max) {
-//   return Math.floor(Math.random() * Math.floor(max));
-// }
-
-
-
-
-// {this.renderStars(50)}
-// {this.renderLanguages()}
-
-// <div className="App">
-//   <header className="App-header">
-//     <h1>Wellington Vicioso</h1>
-//     <h2>New York City</h2>
-//     <h2>Software Developer</h2>
-//   </header>
-// </div>
