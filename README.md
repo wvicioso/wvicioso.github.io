@@ -1,9 +1,5 @@
 # Wellington Vicioso | Personal Website
 
-### Website Purpose:
-
-Demonstrate ability to create intricate UI.
-
 ### Development Details:
 
 - This is a React App hosted on Github pages.
